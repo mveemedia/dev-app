@@ -25,11 +25,11 @@ export const neutral = {
 };
 
 export const indigo = withAlphas({
-  lightest: '#F5F7FF',
-  light: '#EBEEFE',
-  main: '#6366F1',
-  dark: '#4338CA',
-  darkest: '#312E81',
+  lightest: '#FFDFE6', // Light Burgundy
+  light: '#E63E56',   // Rosy Brown
+  main: '#8f1a2a',     // Burgundy (Main Color)
+  dark: '#5C0817',    // Dark Burgundy
+  darkest: '#33040B', // Deep Burgundy
   contrastText: '#FFFFFF'
 });
 
@@ -43,20 +43,20 @@ export const success = withAlphas({
 });
 
 export const info = withAlphas({
-  lightest: '#ECFDFF',
-  light: '#CFF9FE',
-  main: '#06AED4',
-  dark: '#0E7090',
-  darkest: '#164C63',
-  contrastText: '#FFFFFF'
-});
-
+    lightest: '#FFDFE6', // Light Burgundy
+    light: '#E63E56',    // Rosy Brown
+    main: '#8f1a2a',     // Burgundy (Main Color)
+    dark: '#5C0817',     // Dark Burgundy
+    darkest: '#33040B',  // Deep Burgundy
+    contrastText: '#FFFFFF'
+  });
+  
 export const warning = withAlphas({
-  lightest: '#FFFAEB',
-  light: '#FEF0C7',
-  main: '#F79009',
-  dark: '#B54708',
-  darkest: '#7A2E0E',
+  lightest: '#FFDFE6', // Light Burgundy
+  light: '#E63E56',    // Rosy Brown
+  main: '#8f1a2a',     // Burgundy (Main Color)
+  dark: '#5C0817',     // Dark Burgundy
+  darkest: '#33040B',  // Deep Burgundy
   contrastText: '#FFFFFF'
 });
 

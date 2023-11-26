@@ -25,20 +25,20 @@ const Page = () => {
   const [method, setMethod] = useState('email');
   const formik = useFormik({
     initialValues: {
-      email: 'demo@devias.io',
+      email: 'devs@mveemedia.io',
       password: 'Password123!',
       submit: null
     },
     validationSchema: Yup.object({
       email: Yup
         .string()
-        .email('Must be a valid email')
+        .email('Inserisci una email valida')
         .max(255)
-        .required('Email is required'),
+        .required('Inserisci la tua email'),
       password: Yup
         .string()
         .max(255)
-        .required('Password is required')
+        .required('Inserisci la tua password')
     }),
     onSubmit: async (values, helpers) => {
       try {
@@ -71,7 +71,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Login | Devias Kit
+          Login | Land ID App
         </title>
       </Head>
       <Box
@@ -103,7 +103,7 @@ const Page = () => {
                 color="text.secondary"
                 variant="body2"
               >
-                Don&apos;t have an account?
+                Non hai un account?
                 &nbsp;
                 <Link
                   component={NextLink}
@@ -111,7 +111,7 @@ const Page = () => {
                   underline="hover"
                   variant="subtitle2"
                 >
-                  Register
+                  Registrati
                 </Link>
               </Typography>
             </Stack>
@@ -125,7 +125,7 @@ const Page = () => {
                 value="email"
               />
               <Tab
-                label="Phone Number"
+                label="SMS"
                 value="phoneNumber"
               />
             </Tabs>
@@ -139,7 +139,7 @@ const Page = () => {
                     error={!!(formik.touched.email && formik.errors.email)}
                     fullWidth
                     helperText={formik.touched.email && formik.errors.email}
-                    label="Email Address"
+                    label="Indirizzo Email"
                     name="email"
                     onBlur={formik.handleBlur}
                     onChange={formik.handleChange}
@@ -159,7 +159,7 @@ const Page = () => {
                   />
                 </Stack>
                 <FormHelperText sx={{ mt: 1 }}>
-                  Optionally you can skip.
+                 # Notes.
                 </FormHelperText>
                 {formik.errors.submit && (
                   <Typography
@@ -177,7 +177,7 @@ const Page = () => {
                   type="submit"
                   variant="contained"
                 >
-                  Continue
+                  Continua
                 </Button>
                 <Button
                   fullWidth
@@ -185,7 +185,7 @@ const Page = () => {
                   sx={{ mt: 3 }}
                   onClick={handleSkip}
                 >
-                  Skip authentication
+                  Skip
                 </Button>
                 <Alert
                   color="primary"
@@ -193,7 +193,7 @@ const Page = () => {
                   sx={{ mt: 3 }}
                 >
                   <div>
-                    You can use <b>demo@devias.io</b> and password <b>Password123!</b>
+                    Utilizza <b>devs@mveemedia.io</b> and password <b>Password123!</b> per accedere
                   </div>
                 </Alert>
               </form>
@@ -204,7 +204,7 @@ const Page = () => {
                   sx={{ mb: 1 }}
                   variant="h6"
                 >
-                  Not available in the demo
+                  Not available currently
                 </Typography>
                 <Typography color="text.secondary">
                   To prevent unnecessary costs we disabled this feature in the demo.

@@ -37,7 +37,7 @@ export const SettingsPassword = () => {
     <form onSubmit={handleSubmit}>
       <Card>
         <CardHeader
-          subheader="Update password"
+          subheader="Aggiorna password"
           title="Password"
         />
         <Divider />
@@ -56,7 +56,7 @@ export const SettingsPassword = () => {
             />
             <TextField
               fullWidth
-              label="Password (Confirm)"
+              label="Conferma Password"
               name="confirm"
               onChange={handleChange}
               type="password"

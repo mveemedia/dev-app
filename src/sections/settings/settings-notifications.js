@@ -25,8 +25,8 @@ export const SettingsNotifications = () => {
     <form onSubmit={handleSubmit}>
       <Card>
         <CardHeader
-          subheader="Manage the notifications"
-          title="Notifications"
+          subheader="Impostazioni delle notifiche"
+          title="Notifiche"
         />
         <Divider />
         <CardContent>
@@ -42,7 +42,7 @@ export const SettingsNotifications = () => {
             >
               <Stack spacing={1}>
                 <Typography variant="h6">
-                  Notifications
+                  Notifiche
                 </Typography>
                 <Stack>
                   <FormControlLabel
@@ -51,41 +51,11 @@ export const SettingsNotifications = () => {
                   />
                   <FormControlLabel
                     control={<Checkbox defaultChecked />}
-                    label="Push Notifications"
+                    label="Notifiche Push"
                   />
                   <FormControlLabel
                     control={<Checkbox />}
-                    label="Text Messages"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox defaultChecked />}
-                    label="Phone calls"
-                  />
-                </Stack>
-              </Stack>
-            </Grid>
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={12}
-            >
-              <Stack spacing={1}>
-                <Typography variant="h6">
-                  Messages
-                </Typography>
-                <Stack>
-                  <FormControlLabel
-                    control={<Checkbox defaultChecked />}
-                    label="Email"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox />}
-                    label="Push Notifications"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox defaultChecked />}
-                    label="Phone calls"
+                    label="Messaggi SMS"
                   />
                 </Stack>
               </Stack>
@@ -95,7 +65,7 @@ export const SettingsNotifications = () => {
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
           <Button variant="contained">
-            Save
+            Salva
           </Button>
         </CardActions>
       </Card>

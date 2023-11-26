@@ -19,7 +19,7 @@ export const items = [
     )
   },
   {
-    title: 'Customers',
+    title: 'Area Clienti',
     path: '/customers',
     icon: (
       <SvgIcon fontSize="small">
@@ -28,7 +28,7 @@ export const items = [
     )
   },
   {
-    title: 'Companies',
+    title: 'Area Immobili',
     path: '/companies',
     icon: (
       <SvgIcon fontSize="small">
@@ -37,7 +37,7 @@ export const items = [
     )
   },
   {
-    title: 'Account',
+    title: 'Gestione Account',
     path: '/account',
     icon: (
       <SvgIcon fontSize="small">
@@ -46,7 +46,7 @@ export const items = [
     )
   },
   {
-    title: 'Settings',
+    title: 'Impostazioni',
     path: '/settings',
     icon: (
       <SvgIcon fontSize="small">
@@ -54,31 +54,31 @@ export const items = [
       </SvgIcon>
     )
   },
-  {
-    title: 'Login',
-    path: '/auth/login',
-    icon: (
-      <SvgIcon fontSize="small">
-        <LockClosedIcon />
-      </SvgIcon>
-    )
-  },
-  {
-    title: 'Register',
-    path: '/auth/register',
-    icon: (
-      <SvgIcon fontSize="small">
-        <UserPlusIcon />
-      </SvgIcon>
-    )
-  },
-  {
-    title: 'Error',
-    path: '/404',
-    icon: (
-      <SvgIcon fontSize="small">
-        <XCircleIcon />
-      </SvgIcon>
-    )
-  }
+  //{
+  //  title: 'Login',
+  //  path: '/auth/login',
+  //  icon: (
+  //    <SvgIcon fontSize="small">
+  //      <LockClosedIcon />
+  //    </SvgIcon>
+  //  )
+  //},
+  //{
+  //  title: 'Registrazione',
+  //  path: '/auth/register',
+  //  icon: (
+  //    <SvgIcon fontSize="small">
+  //      <UserPlusIcon />
+  //    </SvgIcon>
+  //  )
+  //},
+  //{
+  //  title: 'Errore',
+  //  path: '/404',
+  //  icon: (
+  //    <SvgIcon fontSize="small">
+  //      <XCircleIcon />
+  //    </SvgIcon>
+  //  )
+  //}
 ];

@@ -8,7 +8,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Settings | Devias Kit
+        Impostazioni | Land ID App
       </title>
     </Head>
     <Box
@@ -21,7 +21,7 @@ const Page = () => (
       <Container maxWidth="lg">
         <Stack spacing={3}>
           <Typography variant="h4">
-            Settings
+            Impostazioni
           </Typography>
           <SettingsNotifications />
           <SettingsPassword />

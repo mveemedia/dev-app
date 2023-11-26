@@ -32,12 +32,12 @@ const states = [
 
 export const AccountProfileDetails = () => {
   const [values, setValues] = useState({
-    firstName: 'Anika',
-    lastName: 'Visser',
-    email: 'demo@devias.io',
-    phone: '',
-    state: 'los-angeles',
-    country: 'USA'
+    firstName: 'Julia Carson',
+    lastName: 'Devs',
+    email: 'devs@mveemedia.io',
+    phone: '10655546566',
+    state: 'London',
+    country: 'UK'
   });
 
   const handleChange = useCallback(
@@ -65,8 +65,8 @@ export const AccountProfileDetails = () => {
     >
       <Card>
         <CardHeader
-          subheader="The information can be edited"
-          title="Profile"
+          subheader="Cambia Informazioni Account"
+          title="Profilo"
         />
         <CardContent sx={{ pt: 0 }}>
           <Box sx={{ m: -1.5 }}>
@@ -81,7 +81,7 @@ export const AccountProfileDetails = () => {
                 <TextField
                   fullWidth
                   helperText="Please specify the first name"
-                  label="First name"
+                  label="Nome"
                   name="firstName"
                   onChange={handleChange}
                   required
@@ -94,7 +94,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Last name"
+                  label="Cognome"
                   name="lastName"
                   onChange={handleChange}
                   required
@@ -107,7 +107,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Email Address"
+                  label="Indirizzo Email"
                   name="email"
                   onChange={handleChange}
                   required
@@ -120,7 +120,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Phone Number"
+                  label="Numero Di Telefono"
                   name="phone"
                   onChange={handleChange}
                   type="number"
@@ -146,7 +146,7 @@ export const AccountProfileDetails = () => {
               >
                 <TextField
                   fullWidth
-                  label="Select State"
+                  label="Seleziona Regione"
                   name="state"
                   onChange={handleChange}
                   required
@@ -170,7 +170,7 @@ export const AccountProfileDetails = () => {
         <Divider />
         <CardActions sx={{ justifyContent: 'flex-end' }}>
           <Button variant="contained">
-            Save details
+            Salva
           </Button>
         </CardActions>
       </Card>

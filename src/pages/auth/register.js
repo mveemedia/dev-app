@@ -20,7 +20,7 @@ const Page = () => {
     validationSchema: Yup.object({
       email: Yup
         .string()
-        .email('Must be a valid email')
+        .email('Inserisci la tua email')
         .max(255)
         .required('Email is required'),
       name: Yup
@@ -48,7 +48,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Register | Devias Kit
+          Registrazione | Land ID App
         </title>
       </Head>
       <Box
@@ -73,13 +73,13 @@ const Page = () => {
               sx={{ mb: 3 }}
             >
               <Typography variant="h4">
-                Register
+                Registrati
               </Typography>
               <Typography
                 color="text.secondary"
                 variant="body2"
               >
-                Already have an account?
+                Hai giá un account?
                 &nbsp;
                 <Link
                   component={NextLink}
@@ -100,7 +100,7 @@ const Page = () => {
                   error={!!(formik.touched.name && formik.errors.name)}
                   fullWidth
                   helperText={formik.touched.name && formik.errors.name}
-                  label="Name"
+                  label="Nome"
                   name="name"
                   onBlur={formik.handleBlur}
                   onChange={formik.handleChange}
@@ -110,7 +110,7 @@ const Page = () => {
                   error={!!(formik.touched.email && formik.errors.email)}
                   fullWidth
                   helperText={formik.touched.email && formik.errors.email}
-                  label="Email Address"
+                  label="Indirizzo Email"
                   name="email"
                   onBlur={formik.handleBlur}
                   onChange={formik.handleChange}
@@ -145,7 +145,7 @@ const Page = () => {
                 type="submit"
                 variant="contained"
               >
-                Continue
+                Continua
               </Button>
             </form>
           </div>

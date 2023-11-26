@@ -8,7 +8,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Account | Devias Kit
+        Gestione Account | Land ID App
       </title>
     </Head>
     <Box
