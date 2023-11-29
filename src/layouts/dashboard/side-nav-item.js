@@ -49,9 +49,9 @@ export const SideNavItem = (props) => {
               display: 'inline-flex',
               justifyContent: 'center',
               mr: 2,
-              ...(active && {
-                color: 'primary.main'
-              })
+              // ...(active && {
+              //   color: 'primary.main'
+              // })
             }}
           >
             {icon}
